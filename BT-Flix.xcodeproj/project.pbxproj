@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		0763872021C98820008E8E23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0763871F21C98820008E8E23 /* AppDelegate.swift */; };
-		0763872221C98820008E8E23 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0763872121C98820008E8E23 /* ViewController.swift */; };
 		0763872521C98820008E8E23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0763872321C98820008E8E23 /* Main.storyboard */; };
 		0763872721C98822008E8E23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0763872621C98822008E8E23 /* Assets.xcassets */; };
 		0763872A21C98822008E8E23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0763872821C98822008E8E23 /* LaunchScreen.storyboard */; };
+		0763873621C98CA7008E8E23 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0763873521C98CA7008E8E23 /* Movie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0763871C21C98820008E8E23 /* BT-Flix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BT-Flix.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0763871F21C98820008E8E23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0763872121C98820008E8E23 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0763872421C98820008E8E23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0763872621C98822008E8E23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0763872921C98822008E8E23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0763872B21C98822008E8E23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0763873521C98CA7008E8E23 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +55,45 @@
 			isa = PBXGroup;
 			children = (
 				0763871F21C98820008E8E23 /* AppDelegate.swift */,
-				0763872121C98820008E8E23 /* ViewController.swift */,
-				0763872321C98820008E8E23 /* Main.storyboard */,
-				0763872621C98822008E8E23 /* Assets.xcassets */,
-				0763872821C98822008E8E23 /* LaunchScreen.storyboard */,
-				0763872B21C98822008E8E23 /* Info.plist */,
+				0763873421C98C67008E8E23 /* Supporting Files */,
+				0763873121C98C32008E8E23 /* Models */,
+				0763873221C98C3A008E8E23 /* Views */,
+				0763873321C98C46008E8E23 /* Controllers */,
 			);
 			path = "BT-Flix";
+			sourceTree = "<group>";
+		};
+		0763873121C98C32008E8E23 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0763873521C98CA7008E8E23 /* Movie.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0763873221C98C3A008E8E23 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0763872321C98820008E8E23 /* Main.storyboard */,
+				0763872821C98822008E8E23 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0763873321C98C46008E8E23 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0763873421C98C67008E8E23 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0763872621C98822008E8E23 /* Assets.xcassets */,
+				0763872B21C98822008E8E23 /* Info.plist */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +167,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0763872221C98820008E8E23 /* ViewController.swift in Sources */,
+				0763873621C98CA7008E8E23 /* Movie.swift in Sources */,
 				0763872021C98820008E8E23 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
