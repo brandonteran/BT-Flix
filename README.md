@@ -31,7 +31,7 @@ The following **additional** user stories are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://github.com/brandonteran/BT-Flix/blob/master/bt-flix.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [ezgif](http://ezgif.com/).
 
