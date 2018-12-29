@@ -17,8 +17,17 @@ class MovieAPIManager {
     fileprivate var requestURL: URL?
     
     
+    fileprivate var currentPageCount: Int = 0
+    
+    
     public init() {
-        self.requestURL = URL(string: requestString + apiKey)
+        self.currentPageCount += 1
+        self.requestURL = URL(string: requestString + apiKey + "&page=\(currentPageCount)")
+    }
+    
+    
+    public func increasePageCount() {
+        self.currentPageCount += 1
     }
     
     
@@ -34,6 +43,7 @@ class MovieAPIManager {
             }
             else if let data = taskData {
                 let dataDict = try! JSONSerialization.jsonObject(with: data, options: []) as! [String : Any]
+//                print(dataDict)
                 let movieDictArray = dataDict["results"] as! [[String : Any]]
                 
                 for movieDict in movieDictArray {

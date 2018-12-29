@@ -12,6 +12,7 @@ class NowPlayingViewController: UIViewController {
     @IBOutlet weak var nowPlayingTableView: UITableView!
     private var refreshControl = UIRefreshControl()
     
+//    fileprivate var fetchingMore = false
     
     fileprivate var apiManager = MovieAPIManager()
     fileprivate var movies = [Movie]() {
@@ -28,6 +29,16 @@ class NowPlayingViewController: UIViewController {
             self.refreshControl.endRefreshing()
         })
     }
+    
+    
+//    private func fetchMoreMovies() {
+//        fetchingMore = true
+//        print("Fetching more")
+//        apiManager.requestMovies { (fetchedMovies) in
+//            self.movies.append(contentsOf: fetchedMovies)
+//            self.nowPlayingTableView.reloadData()
+//        }
+//    }
     
     
     override func viewWillAppear(_ animated: Bool) {
@@ -91,7 +102,16 @@ class NowPlayingViewController: UIViewController {
 
 
 extension NowPlayingViewController: UITableViewDelegate {
-    
+//    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+//        let offsetY = scrollView.contentOffset.y
+//        let contentHeight = scrollView.contentSize.height
+//
+//        if offsetY > contentHeight - scrollView.frame.height * 4 {
+//            if !fetchingMore {
+//                fetchMoreMovies()
+//            }
+//        }
+//    }
 }
 
 
